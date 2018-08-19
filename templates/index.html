@@ -1,123 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>Hi, I'm Prashanth</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link href="./static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Custom fonts for this template -->
+    <link href="./static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <script src="https://use.fontawesome.com/0a38ab8407.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="./static/css/grayscale.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- ===========================
-    FAVICONS
-    =========================== -->
-    <link rel="icon" href="img/favicon.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="static/img/apple-touch-icon-ipad-retina.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="static/img/apple-touch-icon-iphone-retina.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="static/img/apple-touch-icon-ipad.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="static/img/apple-touch-icon-iphone.png" />
+  </head>
 
-    <!-- ===========================
-    STYLESHEETS
-    =========================== -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/responsive.css">
+  <body id="page-top">
 
-    <!-- ===========================
-    FONTS & ICONS
-    =========================== -->
-    
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+	<a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fa fa-home" aria-hidden="true"></i></a>
+	<a href="{{url_for('static', filename='download/Resume_Prashanth_Shanmuganathan.pdf')}}<<<<<" class= "nav-link js-scroll-trigger"target="_blank">Resume</a>
 
 
-    <!--[if IE]>
-        <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
 
-<header class="navbar navbar-inverse">
-        <div class="container-header">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar">Home</span>
-                            <span class="icon-bar">Resume</span>
-                            <span class="icon-bar">Projects</span>
-                            <span class="icon-bar">About</span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="{{ url_for('hello') }}">Home<span class="sr-only">(current)</span></a></li>
-                            <li><a href="{{ url_for('resume') }}">Resume<span class="sr-only">(current)</span></a></li>
-                            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-                            <li><a href="{{ url_for('juypter') }}">Juypter</a></li>
-                            <li><a href="{{ url_for('about') }}">About</a></li>
-                        </ul>
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+	  Menu
+	  <i class="fas fa-bars"></i>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	  <ul class="navbar-nav ml-auto">
+	    <li class="nav-item">
+	      <a class="nav-link js-scroll-trigger" href="#about">About</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+	    </li>
+	  </ul>
+	</div>
+      </div>
+    </nav>
 
-                        <ul class="nav navbar-nav navbar-right">
-			  <a class="navbar-brand" href="#" style="color: white;">Prashanth Shanmuganathan<br>hello@sprashanth.com</a>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div>
-            </nav>
-        </div>
-    </header>
+    <!-- Header 
+      <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+      <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
+      <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+      <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+      </div>
+      </div>
+      </header>
+    -->
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="row justify-content-center no-gutters mb-0 mb-lg-0">
+	<div class="col-lg-6">
+	  <img class="img-fluid" src="./static/img/ipad.jpg" alt="">
+	</div>
+	<div class="col-lg-6">
+	  <div class="bg-black text-center h-100 project">
+	    <div class="d-flex h-100">
+	      <div class="project-text w-100 my-auto text-center text-lg-left">
+		<h4 class="text-white">Hi, I'm Prashanth</h4>
+		<p class="mb-0 text-white-50">
 
-<style type="text/css">
+		Over the past six years in high energy nuclear physics give me a strong foundation in both quantitative research and information technology which will provide a perfect transition into the intellectually stimulating environment of industry. My doctoral and postdoctoral tenure provided me with high level, data science skills such as big data driven analysis, critical thinking, problem solving, tool development, and project/team management skills. To aid in a smooth transition, and fill any remaining knowledge gaps, I am also continuing my professional development by following courses and by reading blogs. 
+		<br>
+		This is my portfolio web page I am developing to learn FLASK technology and to launch data project app.
+		</p>
+		<hr class="d-none d-lg-block mb-0 ml-0">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
 
-    body {
-        background: url('static/img/Background.png'); 
-        display: compact; 
-        background-size: 100%;" 
-        background-repeat:no-repeat;
-    }
+    </section>
 
-    .social_icons{
-        padding-right: 30px;
-    }
 
-</style>
 
-<body>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+      <div class="container">
 
-    <div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   </div>
+	<!-- Featured Project Row -->
+	<div class="row align-items-center no-gutters mb-4 mb-lg-5">
+	  <div class="col-xl-8 col-lg-7">
+	    <img class="img-fluid mb-3 mb-lg-0" src="./static/img/bg-masthead.jpg" alt="">
+	  </div>
+	  <div class="col-xl-4 col-lg-5">
+	    <div class="featured-text text-center text-lg-left">
+	      <h4>Projects</h4>
+	      <p class="text-black-50 mb-0">Here are some of my data related projects</p>
+	    </div>
+	  </div>
+	</div>
 
-    <div class="col-md-12 centered">
-        <div class="carousel-caption" style="position: absolute; top: 45%; left: 0; width: 100%;  vertical-align: middle;">
-               <a href="https://www.linkedin.com/in/sprashan" class="social_icons">
-                <i class="fa fa-linkedin fa-4x" aria-hidden="true"></i>
-              </a>
-              <a href="https://github.com/prashanthgit" class="social_icons">
-                <i class="fa fa-github fa-4x" aria-hidden="true"></i>
-              </a>
-              <a href="https://www.facebook.com/prashanthuoc" class="social_icons">
-                <i class="fa fa-facebook fa-4x" aria-hidden="true"></i>
-              </a>
-            
-        </div>
-    </div>
+	<!-- Project zero Row -->
+	<div class="row justify-content-center no-gutters">
+	  <div class="col-lg-6">
+	    <a class="nav-link js-scroll-trigger" href="https://www.star.bnl.gov/public_pnb/client/">
+	    <img class="img-fluid" src="./static/img/flowv1.png" alt="">
+	    </a>
+	  </div>
+	  <div class="col-lg-6 order-lg-first">
+	    <div class="bg-black text-center h-100 project">
+	      <div class="d-flex h-100">
+		<div class="project-text w-100 my-auto text-justify">
+		  <h4 class="text-white">Phase transition of <a href="https://en.wikipedia.org/wiki/Quark">Quarks and Gluons</a></h4>
+		  <p class="mb-0 text-white-50">
+		    When two nucleus collide nearly at the speed of the light in the collider, plasma of quarks and gluons formed for a very short time before the plasma converted into thousands of ordinary particles. To improve the statistical precision, billions of such nuclear collisions get recorded each year, which can easily take petabytes of data. My work is to study the flow of the emitted particles to understand the phase transition of quarks and gluons. I have cleaned up about 3PB of data using hundreds of Linux cores to isolate rare particles, and applied regression techniques on them to look for correlations among different observables. My study showed a new correlation between the centrality of nuclear collision and the flow of the particles. 
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		  <a class="nav-link js-scroll-trigger" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.062301">Journal article</a>
+		  <a class="nav-link js-scroll-trigger" href="https://www.kent.edu/kent/news/kent-state-physics-doctoral-graduate-receives-top-honors-national-laboratory">News letter</a>
 
-</body>
+		  <a href="https://github.com/prashanthgit/Production/ " class="mx-2">
+		    <i class="fab fa-github fa-4x"></i>
+		  </a>
+
+		  </p>
+		  <hr class="d-none d-lg-block mb-0 mr-0">
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Project One Row -->
+	<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+	  <div class="col-lg-6">
+	    <a class="nav-link js-scroll-trigger" href="https://online.star.bnl.gov/epd/">
+	      <img class="img-fluid" src="./static/img/demo-image-01.jpg" alt="">
+	    </a>
+	  </div>
+	  <div class="col-lg-6">
+	    <div class="bg-black text-center h-100 project">
+	      <div class="d-flex h-100">
+		<div class="project-text w-100 my-auto text-center text-lg-left">
+		  <h4 class="text-white">Data quality monitor</h4>
+		  <p class="mb-0 text-white-50">
+		  This is automated web application, which monitors the data quality of a detector called Event Plane Detector at the STAR experiment.
+		  <a class="nav-link js-scroll-trigger" href="https://online.star.bnl.gov/epd/">URL</a>
+		  </p>
+		  <hr class="d-none d-lg-block mb-0 ml-0">
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Project Two Row -->
+	<div class="row justify-content-center no-gutters">
+	  <div class="col-lg-6">
+	    <a class="nav-link js-scroll-trigger" href="https://www.star.bnl.gov/public_pnb/client/">
+	    <img class="img-fluid" src="./static/img/restapi.jpg" alt="">
+	    </a>
+	  </div>
+	  <div class="col-lg-6 order-lg-first">
+	    <div class="bg-black text-center h-100 project">
+	      <div class="d-flex h-100">
+		<div class="project-text w-100 my-auto text-center text-lg-right">
+		  <h4 class="text-white">Modular and Scalable RESTful API</h4>
+		  <p class="mb-0 text-white-50">
+		  Re-shaped the STAR collaboration’s record system  based on a RESTful API, back-end storage engine relying on key/value pair
+		  data representation model coupled with a tiered architecture design. This design was motivated
+		  by the fact that unifying many STAR tools, relying on the same business logic and storage
+		  engine, was a key and central feature for the maintainability and presentation of records. 
+
+		  <a class="nav-link js-scroll-trigger" href="http://www.star.bnl.gov/public_pnb/client/">URL</a>
+		  <a class="nav-link js-scroll-trigger" href="http://iopscience.iop.org/article/10.1088/1742-6596/664/5/052021/pdf">Journal article</a>
+
+		  </p>
+		  <hr class="d-none d-lg-block mb-0 mr-0">
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Project Three Row -->
+	<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+	  <div class="col-lg-6">
+	    <a class="nav-link js-scroll-trigger" href="http://www.star.bnl.gov/talkstats/">
+	    <img class="img-fluid" src="./static/img/startalks.png" alt="">
+	    </a>
+	  </div>
+	  <div class="col-lg-6">
+	    <div class="bg-black text-center h-100 project">
+	      <div class="d-flex h-100">
+		<div class="project-text w-100 my-auto text-center text-lg-left">
+		  <h4 class="text-white">STAR Talks</h4>
+		  <p class="mb-0 text-white-50">
+		  I solved STAR management’s issue of allocating presentations to its collaborators by employing a statistical visualization tool which plotted member scaled summaries.
+
+		  <a class="nav-link js-scroll-trigger" href="http://www.star.bnl.gov/talkstats/">URL</a>
+		  </p>
+		  <hr class="d-none d-lg-block mb-0 ml-0">
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+      </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+      <div class="container">
+	<div class="row">
+	  <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+	    <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+	    <h2 class="text-white mb-5">Please feel free to contact me via</h2>
+
+	  </div>
+	</div>
+      </div>
+      <div class="container">
+
+	<div class="row">
+
+	  <div class="col-md-4 mb-3 mb-md-0">
+	    <div class="card py-4 h-100">
+	      <div class="card-body text-center">
+		<a href="https://www.linkedin.com/in/sprashan" class="mx-2">
+		  <i class="fab fa-linkedin fa-4x"></i>
+		</a>
+		<a href="https://www.facebook.com/prashanthuoc" class="mx-2">
+		  <i class="fab fa-facebook-f fa-4x"></i>
+		</a>
+		<a href="https://github.com/prashanthgit" class="mx-2">
+		  <i class="fab fa-github fa-4x"></i>
+		</a>
+
+	      </div>
+	    </div>
+	  </div>
+
+
+	  <div class="col-md-4 mb-3 mb-md-0">
+	    <div class="card py-4 h-100">
+	      <div class="card-body text-center">
+		<div class="small text-black-50">
+		  <h4><a href="">hello@sprashanth.com</a></h4>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="col-md-4 mb-3 mb-md-0">
+	    <div class="card py-4 h-100">
+	      <div class="card-body text-center">
+		<div class="small text-black-50"><h4>+1 (330) 906 2019</h4></div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+	Copyright &copy; sprashanth.com 2018
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./static/vendor/jquery/jquery.min.js"></script>
+    <script src="./static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="./static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="./static/js/grayscale.min.js"></script>
+
+  </body>
 
 </html>
